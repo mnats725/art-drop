@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtDrop</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Шапка -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/img/logo.svg" alt="ArtDrop Logo">
+                    <span>ArtDrop</span>
+                </a>
+            </div>
+            <!-- Меню сайта -->
+            <nav class="nav">
+                <ul>
+                    <li class="active">Главная</li>
+                    <li>Каталог товаров</li>
+                    <li>Блог</li>
+                    <li>Контакты</li>
+                    <li>Корзина</li>
+                </ul>
+            </nav>
+            <!-- Иконка бургерменю -->
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+
+
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="./assets/img/logo.svg" alt="ArtDrop Logo">
+                            <span>ArtDrop</span>
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

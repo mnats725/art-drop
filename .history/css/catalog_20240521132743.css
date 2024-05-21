@@ -1,0 +1,79 @@
+.catalog-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #004658;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33% - 40px); /* Ширина карточек с учетом отступов */
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-sizing: border-box; /* Учитывает padding и border в общей ширине */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  MA
+  width: 60%;
+  height: 300px;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 1.4em;
+  color: #004658;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 0.9em;
+  color: #666;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #004658;
+  font-weight: bold;
+}
+
+.buy-button {
+  background-color: #004658;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #003244;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .product-card {
+      width: calc(50% - 30px); /* Ширина карточек при средней ширине экрана */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+      width: calc(100% - 20px); /* Ширина карточек при узкой ширине экрана */
+  }
+}
